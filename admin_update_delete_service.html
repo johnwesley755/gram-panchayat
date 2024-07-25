@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update/Delete Service - Admin</title>
+    <link rel="stylesheet" href="user_service.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="admin_update_services.js" defer></script>
+<body>
+    <nav class="navbar">
+        <h1>Update/Delete Service</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="user_loggedin.html">Home</a></p>
+            <p class="navbar-link"><a href="user_service.html">Services</a></p>
+            <p class="navbar-link"><a href="admin_create_service.html">Create Service</a></p>
+            <p class="navbar-link"><a href="admin_update_delete_services.html">Update/Delete Service</a></p>
+            <p class="navbar-link"><a href="admin_update_status.html">Update Application Status</a></p>
+            <p class="navbar-link"><a href="admin_login.html">Logout</a></p>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right">
+            <i class="fa-solid fa-xmark" onclick="closeNavbar()" style="cursor: pointer;"></i>
+        </p>
+        <div class="side-navbar-links">
+            <div class="side-navbar-heading">
+                <h2 style="color: #f2f2f7;">Gram Panchayat</h2>
+            </div>
+            <p class="side-navbar-link"><a href="user_loggedin.html">Home</a></p>
+            <p class="side-navbar-link"><a href="user_service.html">View Services</a></p>
+            <p class="side-navbar-link"><a href="admin_create_service.html">Create Service</a></p>
+            <p class="side-navbar-link"><a href="admin_update_delete_services.html">Update/Delete Service</a></p>
+            <p class="side-navbar-link"><a href="admin_update_status.html">Update Application Status</a></p>
+            <p class="side-navbar-link"><a href="admin_login.html">Logout</a></p>
+        </div>
+    </div>
+    <main id="main-container">
+        <section id="update-services">
+            <h2>Update/Delete Service</h2>
+            <div id="service-list">
+                <!-- Service list will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"></script>
+    <script src="admin_update_delete_service.js"></script>
+    
+</body>
+</html>

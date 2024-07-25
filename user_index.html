@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gram Panchayat - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="user_index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Digital Gram Panchayat</h1>
+      <div class="navbar-links">
+        <p class="navbar-link">
+          <a href="user_index.html">Home</a>
+        </p>
+        <p class="navbar-link">
+          <a href="user_signup.html">Register</a>
+        </p>
+        <p class="navbar-link">
+          <a href="user_login.html">Login</a>
+        </p>
+      </div>
+      <div class="navbar-menu-toggle">
+        <i
+          class="fa-solid fa-bars"
+          onclick="showNavbar()"
+          style="cursor: pointer;"
+        ></i>
+      </div>
+    </nav>
+    <div class="side-navbar">
+      <p style="text-align: right">
+        <i
+          class="fa solid fa-xmark"
+          onclick="closeNavbar()"
+          style="cursor: pointer"
+        ></i>
+      </p>
+      <div class="side-navbar-links">
+        <div class="side-navbar-heading">
+          <h2>Gram Panchayat</h2>
+        </div>
+        <p class="side-navbar-link">
+          <a href="user_index.html">Home</a>
+        </p>
+        <p class="side-navbar-link">
+          <a href="user_signup.html">Register</a>
+        </p>
+        <p class="side-navbar-link">
+          <a href="user_login.html">Login</a>
+        </p>
+        <p class="side-navbar-link">
+          <a href="user_service.html">View services</a>
+        </p>
+        
+      </div>
+    </div>
+    <!--Search-->
+    <div class="search-section">
+      <form class="search-bar">
+        <input type="text" id="search" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+    </div>
+
+    <div class="search-heading">
+      <h2>Welcome to Digital Gram Panchayat Services</h2>
+    </div>
+    <br />
+
+    <!--Header-->
+    <div class="header">
+      <div class="slider">
+        <div class="slides">
+          <img src="image-1.jpg" alt="Slide 1" width="400" height="300" />
+          <img src="image-2.jpg" alt="Slide 2" width="400" height="300" />
+          <img src="image-3.jpg" alt="Slide 3" width="400" height="300" />
+        </div>
+        <div class="navigation">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+      <div class="paragraph">
+        <p>
+          Users can submit your applications for various gram panchayat services
+          directly through the platform. By clicking this button, users can
+          start the application process for the selected service, providing
+          required details and documents, and making the process of availing
+          government services convenient and accessible.
+        </p>
+        <button>View Services</button>
+      </div>
+    </div>
+    <br>
+
+    <div class="headers">
+      <div class="paragraphs">
+        <p>
+          Users can submit your applications for various gram panchayat services
+          directly through the platform. By clicking this button, users can
+          start the application process for the selected service, providing
+          required details and documents, and making the process of availing
+          government services convenient and accessible.
+        </p>
+        <button>Application Status</button>
+      </div>
+      <div class="sliders">
+        <div class="slide">
+          <img src="image-4.jpeg" alt="Slide 1" width="400" height="300" />
+          <img src="image-5.jpeg" alt="Slide 2" width="400" height="300" />
+          <img src="image-6.jpg" alt="Slide 3" width="400" height="300" />
+        </div>
+        <div class="navigations">
+          <button class="previous">&#10094;</button>
+          <button class="next-one">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-box-1">
+          <h2 class="headingText">Digital Gram Panchayat</h2>
+          <p>
+            Welcome to Digital Gram Panchayat Services through which can access
+            all the services by the government.
+          </p>
+          <div class="footer-icon-container">
+            <i class="fa-brands fa-instagram" style="color: #f2f4f7"></i>
+            <i class="fa-brands fa-facebook" style="color: #f2f4f7"></i>
+            <i class="fa-brands fa-twitter" style="color: #f2f4f7"></i>
+          </div>
+        </div>
+        <p>@ grampanchayat.com</p>
+      </div>
+    </div>
+    <script src="user_index.js"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>

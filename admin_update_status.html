@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Application Status - Admin</title>
+    <link rel="stylesheet" href="user_service.css">
+    <script type="module" src="admin_update_status.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Update Application Status</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="user_loggedin.html">Home</a></p>
+            <p class="navbar-link"><a href="user_service.html">Services</a></p>
+            <p class="navbar-link"><a href="admin_create_service.html">Create Service</a></p>
+            <p class="navbar-link"><a href="admin_update_delete_services.html">Update/Delete Service</a></p>
+            <p class="navbar-link"><a href="admin_update_status.html">Update Application Status</a></p>
+            <p class="navbar-link"><a href="admin_login.html">Logout</a></p>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right">
+            <i class="fa-solid fa-xmark" onclick="closeNavbar()" style="cursor: pointer;"></i>
+        </p>
+        <div class="side-navbar-links">
+            <div class="side-navbar-heading">
+                <h2 style="color: #f2f2f7;">Gram Panchayat</h2>
+            </div>
+            <p class="side-navbar-link"><a href="user_loggedin.html">Home</a></p>
+            <p class="side-navbar-link"><a href="user_service.html">View Services</a></p>
+            <p class="side-navbar-link"><a href="admin_create_service.html">Create Service</a></p>
+            <p class="side-navbar-link"><a href="admin_update_delete_services.html">Update/Delete Service</a></p>
+            <p class="side-navbar-link"><a href="admin_update_status.html">Update Application Status</a></p>
+            <p class="side-navbar-link"><a href="admin_login.html">Logout</a></p>
+        </div>
+    </div>
+    <main id="main-container">
+        <section id="update-status">
+            <h2>Update Application Status</h2>
+            <div id="application-list">
+                <!-- Application list will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"></script>
+    <script src="admin_update_status.js"></script>
+</body>
+</html>

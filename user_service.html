@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gram Panchayat - Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="user_service.css">
+    <script type="module" src="user_profile.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Digital Gram Panchayat - Services</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="user_loggedin.html">Home</a></p>
+            <p class="navbar-link"><a href="user_profile.html">Profile</a></p>
+            <p class="navbar-link"><a href="user_login.html">Logout</a></p>
+        </div>
+        <div class="navbar-menu-toggle">
+            <i class="fa-solid fa-bars" onclick="showNavbar()" style="cursor: pointer;"></i>
+        </div>
+    </nav>
+    <div class="side-navbar" id="side-navbar">
+        <p style="text-align: right">
+            <i class="fa-solid fa-xmark" onclick="closeNavbar()" style="cursor: pointer;"></i>
+        </p>
+        <div class="side-navbar-links">
+            <div class="side-navbar-heading">
+                <h2 style="color: #f2f2f7;">Gram Panchayat</h2>
+            </div>
+            <p class="side-navbar-link"><a href="user_loggedin.html">Home</a></p>
+            <p class="side-navbar-link"><a href="user_service.html">View services</a></p>
+            <p class="side-navbar-link"><a href="user_login.html">Logout</a></p>
+            <p class="side-navbar-link"><a href="user_electricity.html">Electricity connection</a></p>
+            <p class="side-navbar-link"><a href="user_water.html">Water connection</a></p>
+            <p class="side-navbar-link"><a href="#">Complaints</a></p>
+            <p class="side-navbar-link"><a href="user_health.html">Health services</a></p>
+            <p class="side-navbar-link"><a href="user_education.html">Education services</a></p>
+        </div>
+    </div>
+    <main id="main-container">
+        <section id="electricity-connections">
+            <h2>Electricity Connections</h2>
+            <img src="image-7.jpeg" alt="Electricity website" class="electricity-img" height="300" width="400">
+            <button onclick="showApplicationForm('electricity')" class="electricity-button">Apply for Electricity Connection</button><br>
+            <p>Users can easily apply in the gram panchayat website to get the new electricity connection for your house.</p>
+        </section>
+        <section id="water-supply">
+            <h2>Water Supply</h2>
+            <img src="image-9.jpeg" alt="Water-supply" height="300" width="400">
+            <button onclick="showApplicationForm('water')">Apply for Water Supply</button>
+            <p>Users can apply to get the new water connection for your house easily through our gram panchayat website.</p>
+        </section>
+       <section id="health-services">
+            <h2>Health Services</h2>
+            <img src="image-10.jpg" alt="Health Services" height="300" width="400">
+            <button onclick="showApplicationForm('health')">View Health Services</button>
+             <p>Users can view the health services which are provided by the government easily through our gram panchayat website.</p>
+        </section>
+        <section id="education-services">
+            <h2>Education Services</h2>
+            <img src="image-11.jpeg" alt="Education Services" height="300" width="400">
+            <button onclick="showApplicationForm('education')">View Education Services</button>
+            <p>Users can view about the schemes provided in the schools for the welfare of the school students through our gram panchayat website</p>
+        </section>
+        <section id="expenses">
+            <h2>Gram Panchayat Expenses</h2>
+            <div id="expenses-content">
+                <!-- Expenses details will be populated here -->
+            </div>
+        </section>
+        <section id="complaints">
+            <h2>Complaints</h2>
+            <button onclick="location.href='complaints.html'">View and Register Complaints</button>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"></script>
+    <script src="user_service.js"></script>
+    <script>
+     
+      
+
+    </script>
+</body>
+</html>
